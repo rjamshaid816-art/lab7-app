@@ -1,8 +1,13 @@
 version: 0.2
+
 phases:
   build:
     commands:
-      - echo "Build complete"
+      - echo "Build started"
+      - mkdir build
+      - cp -r * build/
+
 artifacts:
   files:
     - '**/*'
+  base-directory: build
